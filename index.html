@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto de empresa..">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Ejercicio</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <form action="send.php" method="POST">
+            <h1>Formulario</h1>
+            <ul class="fields">
+                <li class="field">
+                    <label>
+                        Nombre*
+                        <input type="text" name="nombre" placeholder="David" >
+                    </label>
+                </li>
+                <li class="field">
+                    <label>
+                        Apellido
+                        <input type="text" name="apellido" placeholder="Ares">
+                    </label>
+                </li>
+
+                <li class="field">
+                    <label>Edad
+                        <input type="number" id="edad" name="edad" step="1">
+                    </label>
+                </li>
+
+                <li class="field">
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <label><input type="radio" name="sexo" value="hombre">Masculino</label>
+                        <label><input type="radio" name="sexo" value="mujer">Femenino</label>
+                    </fieldset>
+                </li>
+
+                <li class="field">
+                    <label>Correo Electrónico*
+                        <input type="email" id="email" name="email" placeholder="Ej: daresay.appventurers@gmail.com" ></label>
+                </li>
+
+                <li class="field">
+                    <label>Número de Teléfono
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 666555444"></label>
+                </li>
+
+            </ul>
+
+            <button>Enviar</button><br>
+            <p>Se deben cubrir los campos *</p>
+        </form>
+    </main>
+</body>
+
+</html>
